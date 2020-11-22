@@ -27,4 +27,13 @@ public class RationalNumber extends RealNumber {
     return denominator;
   }
 
+  public RationalNumber reciprocal() {
+    RationalNumber ans = new RationalNumber(denominator / numerator);
+    return ans;
+  }
+
+  public boolean equals(RationalNumber other) {
+    return numerator == other.getNumerator() && denominator == other.getDenominator();
+  }
+
 }

@@ -25,4 +25,19 @@ public class RealNumber{
     return ans;
   }
 
+  public RealNumber multiply(RealNumber other) {
+    RealNumber ans = new RealNumber(value * other.value);
+    return ans;
+  }
+
+  public RealNumber divide(RealNumber other) {
+    RealNumber ans = new RealNumber(value / other.value);
+    return ans;
+  }
+
+  public RealNumber subtract(RealNumber other) {
+    RealNumber ans = new RealNumber(value - other.value);
+    return ans;
+  }
+
 }

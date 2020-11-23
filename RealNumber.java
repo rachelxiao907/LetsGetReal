@@ -15,7 +15,7 @@ public class RealNumber {
 
   public boolean equals(RealNumber other) {
     if (value == 0 || other.getValue() == 0) {
-      return value == other.getValue();
+      return value == 0 && other.getValue() == 0;
     }
     return Math.abs((other.getValue() - value) / value * 100) < 0.001;
   }

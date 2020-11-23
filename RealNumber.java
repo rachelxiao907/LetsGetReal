@@ -14,29 +14,29 @@ public class RealNumber {
   }
 
   public boolean equals(RealNumber other) {
-    if (value == 0 || other.value == 0) {
+    if (value == 0 || other.getValue() == 0) {
       return value == other.getValue();
     }
-    return Math.abs((other.value - value) / value * 100) < 0.001;
+    return Math.abs((other.getValue() - value) / value * 100) < 0.001;
   }
 
   public RealNumber add(RealNumber other) {
-    RealNumber ans = new RealNumber(value + other.value);
+    RealNumber ans = new RealNumber(value + other.getValue());
     return ans;
   }
 
   public RealNumber multiply(RealNumber other) {
-    RealNumber ans = new RealNumber(value * other.value);
+    RealNumber ans = new RealNumber(value * other.getValue());
     return ans;
   }
 
   public RealNumber divide(RealNumber other) {
-    RealNumber ans = new RealNumber(value / other.value);
+    RealNumber ans = new RealNumber(value / other.getValue());
     return ans;
   }
 
   public RealNumber subtract(RealNumber other) {
-    RealNumber ans = new RealNumber(value - other.value);
+    RealNumber ans = new RealNumber(value - other.getValue());
     return ans;
   }
 

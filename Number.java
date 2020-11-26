@@ -16,9 +16,9 @@ public abstract class Number{
   }
 
   public boolean equals(Number other){
-    if (value == 0 || other.getValue() == 0) {
-      return value == 0 && other.getValue() == 0;
+    if (getValue() == 0 || other.getValue() == 0) {
+      return getValue() == 0 && other.getValue() == 0;
     }
-    return Math.abs((other.getValue() - value) / value) < 0.00001;
+    return Math.abs((other.getValue() - getValue()) / getValue()) < 0.00001;
   }
 }
